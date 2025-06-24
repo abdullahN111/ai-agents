@@ -31,11 +31,11 @@ model = OpenAIChatCompletionsModel(
 set_tracing_disabled(disabled=True)
 
 
-TASKS_FILE = "tasks.json"
+TOPICS_FILE = "topics.json"
 
 
 
-async def save_tasks() -> None:
+async def save_topic() -> None:
     agent: Agent = Agent(name="Tasks Manager", instructions="""You are a task manager agent. Only accept tasks related to study. For each valid task name given by the student, return a JSON object with:
 
 "name": "Task name"
@@ -48,7 +48,7 @@ Reject all non-study-related tasks. Remember not to write any other thing just r
     
     user_query = input("\nSay something: ")
     result = await Runner.run(agent, user_query)
-    print(result.final_output)
+
     
     
     def extract_json_block(text: str) -> str:
@@ -58,7 +58,7 @@ Reject all non-study-related tasks. Remember not to write any other thing just r
 
     try:
         raw = extract_json_block(result.final_output)
-        task: Dict = json.loads(raw)
+        topic: Dict = json.loads(raw)
     except json.JSONDecodeError as e:
         print("Invalid JSON from agent.", str(e))
         return
@@ -66,67 +66,90 @@ Reject all non-study-related tasks. Remember not to write any other thing just r
     
     
     
-    status = task.get("status")
+    status = topic.get("status")
     if isinstance(status, list) and status:
-        task["status"] = status[0]
+        topic["status"] = status[0]
     elif isinstance(status, str):
         if " and " in status:
-            task["status"] = status.split(" and ")[0].strip()
+            topic["status"] = status.split(" and ")[0].strip()
     else:
         print("Invalid status format.")
         return
         
     
     
-    if os.path.exists(TASKS_FILE):
-        with open(TASKS_FILE, "r", encoding="utf-8") as f:
-            todos: List[Dict] = json.load(f)
+    if os.path.exists(TOPICS_FILE):
+        with open(TOPICS_FILE, "r", encoding="utf-8") as f:
+            topics: List[Dict] = json.load(f)
     else:
-        todos = []
+        topics = []
 
 
-    task["id"] = len(todos)+1
-    todos.append(task)
+    topic["id"] = len(topics)+1
+    topics.append(topic)
 
-    with open(TASKS_FILE, "w", encoding="utf-8") as f:
-        json.dump(todos, f, indent=2)
+    with open(TOPICS_FILE, "w", encoding="utf-8") as f:
+        json.dump(topics, f, indent=2)
 
-    print("Task saved successfully.")
+    print("\nTopic saved successfully.\n")
 
 
 
-async def display_tasks() -> None:
-    print("\n---All Tasks---\n")
-    if not os.path.exists(TASKS_FILE):
-        print("No tasks found.")
+async def display_topics() -> None:
+    print("\n---All Topics---\n")
+    if not os.path.exists(TOPICS_FILE):
+        print("No topics found.\n")
         return
     
-    with open(TASKS_FILE, "r", encoding="utf-8") as f:
+    with open(TOPICS_FILE, "r", encoding="utf-8") as f:
         try:
-            tasks: List[Dict] = json.load(f)
+            topics: List[Dict] = json.load(f)
         except json.JSONDecodeError:
-            print("Corrupted tasks.json")
+            print(f"Corrupted {TOPICS_FILE}")
             return
         
-    for task in tasks:
-        print(f"{task["id"]}. {task["name"]}")
+    for topic in topics:
+        print(f"{topic["id"]}. {topic["name"]}")
         
    
-    task_id = int(input("\nEnter task ID to get task details: "))
+    topic_id = int(input("\nEnter topic ID to get topic details: "))
 
-    for task in tasks:
-        if task["id"] == task_id:
-            print(f'\n>>> {task["id"]}. {task["name"]}\n')
-            print(task["description"])
-            print(f'\nStatus: {task["status"]}\n')
+    for topic in topics:
+        if topic["id"] == topic_id:
+            print(f'\n>>> {topic["id"]}. {topic["name"]}\n')
+            print(topic["description"])
+            print(f'\nStatus: {topic["status"]}\n')
             break
     else:
-        print("Task not found.") 
+        print("Topic not found.") 
+
+async def delete_topic():
+    topic_id = int(input("\nEnter topic ID to delete a topic: "))
+    
+    with open(TOPICS_FILE, "r", encoding="utf-8") as f:
+        try:
+            topics: List[Dict] = json.load(f)
+        except json.JSONDecodeError:
+            print(f"Corrupted {TOPICS_FILE}")
+            return
+        
+        for topic in topics:
+            if topic_id == topic["id"]:
+                topics.remove(topic)
+                print(f"Topic {topic["name"]} removed successfully\n")
+                
+                
+                with open(TOPICS_FILE, "w", encoding="utf-8") as f:
+                    json.dump(topics, f, indent=4)
+                return
+    
+        print(f"No topic found with ID {topic_id}\n")
+    
 
 
 def main() -> None:
     
-    options = ["Search & Save a Topic", "See Topics", "Exit"]
+    options = ["Search & Save Topic", "See Topics", "Delete Topic", "Exit"]
     print("\n<---Welcome to Smart Student Agent--->\n")
     condition = True
     while condition:
@@ -136,14 +159,20 @@ def main() -> None:
         user_input: str = input("\nSelect: ")
         
         if user_input == "1":
-            asyncio.run(save_tasks())
+            asyncio.run(save_topic())
         
         elif user_input == "2":
-            asyncio.run(display_tasks())
+            asyncio.run(display_topics())
         
         elif user_input == "3":
-            condition = False
+            asyncio.run(delete_topic())
+        
+        elif user_input == "4":
             print("\n---Good Bye---")
+            condition = False
+            
+        else:
+            print("Invalid Input! try again")
 
 
 if __name__ == "__main__":

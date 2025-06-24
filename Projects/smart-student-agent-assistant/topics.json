@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Java",
+        "description": "Dive into the world of Java, a versatile and widely-used programming language. Start by understanding its core principles, including object-oriented programming concepts like classes, objects, inheritance, polymorphism, and encapsulation. Explore data types, control flow statements (if-else, loops), and operators. Master the Java syntax and learn how to write, compile, and execute Java programs. Delve into collections framework, handling exceptions, and working with input/output streams. Get familiar with multithreading for concurrent programming and explore Java's extensive API for various functionalities like networking, database connectivity (JDBC), and graphical user interface (GUI) development with Swing or JavaFX. Practice with coding exercises and projects to solidify your understanding and build practical skills in Java development.",
+        "status": "complete",
+        "id": 1
+    },
+    {
+        "name": "FastAPI Study",
+        "description": "Delve into the FastAPI web framework for building APIs with Python. Begin by understanding its core principles, including type hints, dependency injection, and automatic data validation using Pydantic. Explore creating API endpoints, handling requests and responses, and defining data models. Learn about routing, middleware, and exception handling. Investigate advanced topics such as security, authentication (OAuth2, JWT), and authorization. Practice building RESTful APIs with CRUD operations, utilizing databases (SQL or NoSQL) for data persistence. Focus on writing clean, testable, and well-documented code. Explore deployment strategies for FastAPI applications, including containerization with Docker and deployment to cloud platforms. Study ASGI servers like Uvicorn and Hypercorn. Dive deep into performance optimization techniques to build scalable and efficient APIs with FastAPI.",
+        "status": "complete",
+        "id": 2
+    },
+    {
+        "name": "Nuclear Test",
+        "description": "The task involves conducting thorough research on nuclear testing. Begin by delving into the history of nuclear tests, understanding the reasons behind them, and identifying key periods of intense testing activity. Next, investigate the different types of nuclear tests, such as atmospheric, underground, and underwater tests, analyzing their specific characteristics and the technologies employed. A crucial aspect is to assess the environmental impacts of nuclear testing, focusing on radiation contamination, long-term ecological consequences, and the effects on human health. Further, explore the international treaties and agreements aimed at regulating or banning nuclear tests, like the Comprehensive Nuclear-Test-Ban Treaty (CTBT), and analyze their effectiveness and the challenges in their enforcement. Finally, examine the current state of nuclear testing, including any ongoing activities or controversies, and discuss the geopolitical implications and potential future scenarios related to nuclear weapons and testing.",
+        "status": "complete",
+        "id": 4
+    },
+    {
+        "name": "OOP",
+        "description": "Object-Oriented Programming (OOP) is a programming paradigm based on the concept of \"objects\", which contain data in the form of fields (often known as attributes) and code in the form of procedures (often known as methods). A central feature of OOP is the concept of classes, which are blueprints for creating objects. Key principles include encapsulation (bundling data and methods that operate on that data within a class), inheritance (creating new classes from existing classes, inheriting their properties and behaviors), and polymorphism (the ability of an object to take on many forms).  OOP aims to improve code reusability, maintainability, and organization, making it easier to develop and manage complex software systems by modeling real-world entities and their interactions.",
+        "status": "complete",
+        "id": 5
+    }
+]
