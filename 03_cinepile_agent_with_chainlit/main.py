@@ -1,6 +1,6 @@
 import os
 import chainlit as cl
-from chainlit.user import User
+
 from agents import Runner, Agent, AsyncOpenAI, OpenAIChatCompletionsModel
 from agents.run import RunConfig
 from dotenv import load_dotenv
@@ -15,13 +15,7 @@ if not api_key:
 
 
 
-def oauth_callback(provider_id: str, token: str, row_user_data: Dict[str, str], default_user: User) -> Optional[User]:
-    """Handle the OAuth callback from github."""
-    
-    print(f"Provider: {provider_id}")
-    print(f"User Data: {row_user_data}")
-    
-    return default_user
+
 
 @cl.on_chat_start
 async def start():
