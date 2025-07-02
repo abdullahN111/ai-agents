@@ -11,7 +11,7 @@ load_dotenv()
 api_key = os.getenv("OPENROUTER_API_KEY")
 base_url = os.getenv("BASE_URL")
 
-MODEL = "mistralai/mistral-7b-instruct"
+MODEL = "undi95/toppy-m-7b"
 
 if not api_key:
     raise ValueError("OPENROUTER_API_KEY is not set in the environment variables.")
@@ -35,9 +35,11 @@ async def main():
         model=model,
     )
     
-    result = await Runner.run(starting_agent=agent, input="Write lyrics of Attack on titan season 2 opening song sasageyo sasageyo.")
-    
-    print(result.final_output)
+    try:
+        result = await Runner.run(starting_agent=agent, input="Write lyrics of Attack on titan season 2 opening song sasageyo sasageyo.")
+        print(result.final_output)
+    except Exception as e:
+        print("Error:", e)
     
     
 if __name__ == "__main__":

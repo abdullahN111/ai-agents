@@ -1,0 +1,19 @@
+# Virtual environment
+.venv/
+*.pyc
+__pycache__/
+.mypy_cache/
+.chainlit/
+
+# Python package manager & build
+*.lock
+*.egg-info/
+dist/
+build/
+
+# VSCode / IDE
+.vscode/
+.idea/
+
+# Secrets and environment
+.env

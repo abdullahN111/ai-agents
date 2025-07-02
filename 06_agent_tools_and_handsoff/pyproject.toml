@@ -1,10 +1,9 @@
 [project]
-name = "05-open-router-and-litellm"
+name = "06-agent-tools"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "load-dotenv>=0.1.0",
-    "openai-agents[litellm]>=0.1.0",
+    "openai-agents>=0.1.0",
 ]
