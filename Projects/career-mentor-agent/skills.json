@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Frontend Developer",
+    "skills": ["HTML", "CSS", "JavaScript", "Responsive Design", "React", "Tailwind CSS", "Version Control (Git)", "Build Tools (Vite/Webpack)"]
+  },
+  {
+    "id": 2,
+    "name": "Backend Developer",
+    "skills": ["Python", "FastAPI", "Databases (SQL/SQLite)", "Authentication", "APIs", "Docker", "ORM (SQLAlchemy)", "Unit Testing"]
+  },
+  {
+    "id": 3,
+    "name": "Fullstack Developer",
+    "skills": ["HTML", "CSS", "JavaScript", "React", "Node.js", "Express.js", "MongoDB", "REST APIs", "Git", "Deployment (Vercel/Render)"]
+  },
+  {
+    "id": 4,
+    "name": "Data Scientist",
+    "skills": ["Python", "Pandas", "NumPy", "Data Visualization", "Statistics", "Machine Learning", "Scikit-learn", "Deep Learning"]
+  },
+  {
+    "id": 5,
+    "name": "UI/UX Designer",
+    "skills": ["Design Principles", "Wireframing", "Prototyping", "Figma", "User Research", "Color Theory", "Typography", "Design Systems"]
+  },
+  {
+    "id": 6,
+    "name": "Mobile App Developer",
+    "skills": ["JavaScript", "React Native", "Mobile UI/UX", "State Management", "API Integration", "Push Notifications", "Testing", "Publishing to App Stores"]
+  },
+  {
+    "id": 7,
+    "name": "AI Engineer",
+    "skills": ["Python", "Machine Learning", "Deep Learning", "TensorFlow", "PyTorch", "Model Deployment", "Data Preprocessing", "Model Evaluation"]
+  },
+  {
+    "id": 8,
+    "name": "Cybersecurity Analyst",
+    "skills": ["Networking Basics", "Linux", "Cryptography", "Threat Detection", "Vulnerability Assessment", "Firewalls", "SIEM Tools", "Penetration Testing"]
+  },
+  {
+    "id": 9,
+    "name": "Cloud Engineer",
+    "skills": ["Linux", "Networking", "AWS or Azure", "Cloud Architecture", "CI/CD", "Terraform", "Monitoring", "Docker/Kubernetes"]
+  },
+  {
+    "id": 10,
+    "name": "Product Manager",
+    "skills": ["Product Lifecycle", "Market Research", "Agile/Scrum", "Wireframing Tools", "User Stories", "Data Analysis", "Stakeholder Communication", "Roadmapping"]
+  },
+  {
+    "id": 11,
+    "name": "Machine Learning Engineer",
+    "skills": ["Python", "Scikit-learn", "Model Training", "Hyperparameter Tuning", "Model Evaluation", "ML Pipelines", "Cloud ML Services", "MLOps"]
+  },
+  {
+    "id": 12,
+    "name": "Deep Learning Engineer",
+    "skills": ["Python", "PyTorch", "TensorFlow", "Convolutional Neural Networks", "RNNs/LSTMs", "Transfer Learning", "GPU Acceleration", "Model Optimization"]
+  },
+  {
+    "id": 13,
+    "name": "AI Researcher",
+    "skills": ["Mathematics for ML", "Probability Theory", "Neural Network Architectures", "Reinforcement Learning", "Research Paper Reading", "Experimentation", "Algorithm Design"]
+  },
+  {
+    "id": 14,
+    "name": "NLP Engineer",
+    "skills": ["Python", "Text Preprocessing", "NLP Libraries (spaCy, NLTK)", "Transformer Models", "Hugging Face", "BERT/GPT", "Text Classification", "Tokenization"]
+  },
+  {
+    "id": 15,
+    "name": "Computer Vision Engineer",
+    "skills": ["OpenCV", "Image Processing", "CNNs", "Object Detection", "Image Segmentation", "YOLO/SSD", "Real-Time Inference", "Model Deployment"]
+  },
+  {
+    "id": 16,
+    "name": "AI Product Manager",
+    "skills": ["AI Fundamentals", "Data Privacy", "Product Strategy", "Model Life Cycle", "Ethical AI", "Cross-functional Communication", "AI Business Use Cases"]
+  }
+]
