@@ -81,6 +81,7 @@ Only use tools or handoffs when appropriate. Always guide the user clearly throu
     handoffs=[career_agent, skill_agent, job_agent]
 )
 
+user_input = input("Write something: ")
 
-result = Runner.run_sync(career_mentor_agent, "tell me trending ai technologies for job")
+result = Runner.run_sync(career_mentor_agent, user_input)
 print(result.final_output)

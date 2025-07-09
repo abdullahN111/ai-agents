@@ -1,0 +1,102 @@
+[
+  {
+    "id": 101,
+    "flight_name": "Emirates",
+    "destination": "Bali"
+  },
+  {
+    "id": 102,
+    "flight_name": "Qatar Airways",
+    "destination": "Maldives"
+  },
+  {
+    "id": 103,
+    "flight_name": "Singapore Airlines",
+    "destination": "Singapore"
+  },
+  {
+    "id": 104,
+    "flight_name": "Turkish Airlines",
+    "destination": "Santorini"
+  },
+  {
+    "id": 105,
+    "flight_name": "Etihad Airways",
+    "destination": "Dubai"
+  },
+  {
+    "id": 106,
+    "flight_name": "FlyDubai",
+    "destination": "Istanbul"
+  },
+  {
+    "id": 107,
+    "flight_name": "Thai Airways",
+    "destination": "Bangkok"
+  },
+  {
+    "id": 108,
+    "flight_name": "Lufthansa",
+    "destination": "Switzerland"
+  },
+  {
+    "id": 109,
+    "flight_name": "Air Nepal",
+    "destination": "Kathmandu"
+  },
+  {
+    "id": 110,
+    "flight_name": "Pegasus Airlines",
+    "destination": "Turkey"
+  },
+  {
+    "id": 111,
+    "flight_name": "British Airways",
+    "destination": "London"
+  },
+  {
+    "id": 112,
+    "flight_name": "Air France",
+    "destination": "Paris"
+  },
+  {
+    "id": 113,
+    "flight_name": "KLM Royal Dutch",
+    "destination": "Amsterdam"
+  },
+  {
+    "id": 114,
+    "flight_name": "Delta Airlines",
+    "destination": "New York"
+  },
+  {
+    "id": 115,
+    "flight_name": "American Airlines",
+    "destination": "Los Angeles"
+  },
+  {
+    "id": 116,
+    "flight_name": "Saudia",
+    "destination": "Riyadh"
+  },
+  {
+    "id": 117,
+    "flight_name": "Cathay Pacific",
+    "destination": "Hong Kong"
+  },
+  {
+    "id": 118,
+    "flight_name": "ANA",
+    "destination": "Tokyo"
+  },
+  {
+    "id": 119,
+    "flight_name": "Qantas",
+    "destination": "Sydney"
+  },
+  {
+    "id": 120,
+    "flight_name": "Austrian Airlines",
+    "destination": "Vienna"
+  }
+]
