@@ -153,7 +153,11 @@ def main():
     conversation_history = []
 
     while True:
-        user_input = input("\nEnter your query: ")
+        try
+            user_input = input("\nEnter your query: ")
+        except:
+            print("Invalid Input!")
+            continue
 
         if user_input.lower() in ["exit", "quit"]:
             print("\nThank you for using Travel Designer Agent. Goodbye!\n")

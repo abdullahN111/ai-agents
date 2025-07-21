@@ -1,0 +1,17 @@
+[
+  { "id": 1, "title": "Dark Forest" },
+  { "id": 2, "title": "Haunted Castle" },
+  { "id": 3, "title": "Mystic Riverbank" },
+  { "id": 4, "title": "Cursed Crypt" },
+  { "id": 5, "title": "Goblin Cave" },
+  { "id": 6, "title": "Abandoned Village" },
+  { "id": 7, "title": "Enchanted Meadow" },
+  { "id": 8, "title": "Dragon’s Lair" },
+  { "id": 9, "title": "Ancient Temple Ruins" },
+  { "id": 10, "title": "Frozen Tundra" },
+  { "id": 11, "title": "Witch’s Swamp" },
+  { "id": 12, "title": "Volcanic Crater" },
+  { "id": 13, "title": "Royal Armory" },
+  { "id": 14, "title": "Crystal Cavern" },
+  { "id": 15, "title": "Sky Tower Summit" }
+]
