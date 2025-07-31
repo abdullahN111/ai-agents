@@ -153,7 +153,7 @@ def main():
     conversation_history = []
 
     while True:
-        try
+        try:
             user_input = input("\nEnter your query: ")
         except:
             print("Invalid Input!")

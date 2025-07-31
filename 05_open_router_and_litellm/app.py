@@ -33,7 +33,7 @@ async def main():
     )
     
     try:
-        result = await Runner.run(starting_agent=agent, input="Write lyrics of Attack on titan season 2 opening song sasageyo sasageyo.")
+        result = await Runner.run(starting_agent=agent, input="Difference between scout regiment and survey corps in Attack on titan")
         print(result.final_output)
     except Exception as e:
         print("Error:", e)
