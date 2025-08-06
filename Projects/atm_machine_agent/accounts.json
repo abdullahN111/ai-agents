@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Abdullah",
+        "pin": 1111,
+        "balance": 150000
+    },
+    {
+        "name": "John",
+        "pin": 2222,
+        "balance": 100000
+    },
+    {
+        "name": "Jane",
+        "pin": 3333,
+        "balance": 330000
+    },
+    {
+        "name": "Jim",
+        "pin": 4444,
+        "balance": 400000
+    },
+    {
+        "name": "Jill",
+        "pin": 5555,
+        "balance": 766000
+    },
+    {
+        "name": "Jack",
+        "pin": 6666,
+        "balance": 616000
+    },
+    {
+        "name": "Ruma",
+        "pin": 7777,
+        "balance": 700000
+    },
+    {
+        "name": "Sam",
+        "pin": 8888,
+        "balance": 766000
+    }
+]
