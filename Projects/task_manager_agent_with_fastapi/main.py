@@ -1,13 +1,17 @@
+import os
 import asyncio
-from fastapi import FastAPI
-from app.routes import router as task_router
-from agents import Agent, Runner, set_tracing_disabled
 
+from fastapi import FastAPI
+from agents import Agent, Runner, set_tracing_export_api_key
+
+from app.routes import router as task_router
 from app.tools import add_task, view_all_tasks, view_single_task, delete_task, greet_user
 from utils.agent_config import model, session
 
-set_tracing_disabled(disabled=True)
-
+# set_tracing_disabled(disabled=True)
+tracing_api_key = os.environ["OPENAI_API_KEY"]
+set_tracing_export_api_key(tracing_api_key)
+    
 app = FastAPI()
 app.include_router(task_router)
 
