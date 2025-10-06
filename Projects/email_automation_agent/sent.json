@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "sender": "you@example.com",
+    "recipient": "abd@gmail.com",
+    "subject": "Invitation for Conference",
+    "body": "you are invited to participate in cconference related to AI",
+    "timestamp": "2025-09-25 14:24:54",
+    "labels": [
+      "AI",
+      "Tech"
+    ],
+    "attachments": [],
+    "status": "sent"
+  },
+  {
+    "id": 2,
+    "sender": "you@example.com",
+    "recipient": "ak@gmail.com",
+    "subject": "News Letter",
+    "body": "The increasing integration of AI is significantly reshaping the industry landscape.",
+    "timestamp": "2025-09-25 14:34:22",
+    "labels": [],
+    "attachments": [],
+    "status": "sent"
+  },
+  {
+    "id": 3,
+    "sender": "you@example.com",
+    "recipient": "alice@example.com",
+    "subject": "Re: Previous Email",
+    "body": "Thank you for your email. I will respond to your query shortly.",
+    "timestamp": "2025-09-25 14:40:14",
+    "labels": [],
+    "attachments": [],
+    "status": "sent"
+  },
+  {
+    "id": 4,
+    "sender": "you@example.com",
+    "recipient": "alice",
+    "subject": "Reply",
+    "body": "Your previous message has been received and reviewed. Thank you for your communication.",
+    "timestamp": "2025-09-26 14:53:26",
+    "labels": [],
+    "attachments": [],
+    "status": "sent"
+  }
+]
