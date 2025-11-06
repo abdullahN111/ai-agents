@@ -2,7 +2,7 @@ import json
 from typing import Optional, List
 from datetime import datetime
 
-from agents import Runner, function_tool, Agent, handoff
+from agents import function_tool, Agent, handoff
 from pydantic import BaseModel
 
 from config import config
@@ -46,7 +46,7 @@ def get_emails() -> str:
             data = json.load(file)
             formatted_emails = []
             for email in data:
-                sender_name = email["sender"].split(".com")[0].capitalize()
+                sender_name = email["sender"].split(".com")[0]
                 body = email["body"]
                 formatted_emails.append(f"{email['id']}. {sender_name}: {body}")
 

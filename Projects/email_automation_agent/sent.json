@@ -45,5 +45,29 @@
     "labels": [],
     "attachments": [],
     "status": "sent"
+  },
+  {
+    "id": 5,
+    "sender": "you@example.com",
+    "recipient": "hr@company.com",
+    "subject": "Reply to HR",
+    "body": "Thank you for your email. I am responding as requested. Please let me know if you require any further information.",
+    "timestamp": "2025-10-15 13:50:57",
+    "labels": [],
+    "attachments": [],
+    "status": "sent"
+  },
+  {
+    "id": 6,
+    "sender": "you@example.com",
+    "recipient": "deliveryservice@example.com",
+    "subject": "Reply to Your Communication",
+    "body": "Thank you for your message. We acknowledge receipt and will provide an update shortly.",
+    "timestamp": "2025-10-15 13:57:31",
+    "labels": [
+      "reply"
+    ],
+    "attachments": [],
+    "status": "sent"
   }
 ]
